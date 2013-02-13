@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:stretchColumns="*">
+    <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_weight="0.25">
+        <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/monitor" android:layout_column="0" android:layout_span="4" android:width="400dp"
+                android:height="15dp" android:singleLine="true"
+                />
+    </TableRow>
+    <TableRow android:layout_width="fill_parent" android:layout_height="fill_parent"
+              android:id="@+id/tableRow" android:layout_weight="0.25">
+        <Button android:layout_width="fill_parent" android:layout_height="match_parent" android:text="(" android:layout_column="0"
+                android:id="@+id/left_bracket" android:onClick="doClickOperation"/>
+        <Button android:layout_width="fill_parent" android:layout_height="match_parent" android:text=")" android:layout_column="1"
+                android:id="@+id/right_bracket" android:onClick="doClickOperation"/>
+        <Button android:layout_width="fill_parent" android:layout_height="match_parent" android:text="M" android:layout_column="2"
+                android:id="@+id/remember"/>
+        <Button android:layout_width="fill_parent" android:layout_height="match_parent" android:text="C" android:layout_column="3"
+                android:id="@+id/clean" android:onClick="doClear"/>
+    </TableRow>
+    <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_weight="0.25">
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="1"
+                android:id="@+id/digit1" android:layout_column="0" android:onClick="doClickDigit"/>
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="2"
+                android:id="@+id/digit2" android:layout_column="1" android:onClick="doClickDigit"/>
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="3"
+                android:id="@+id/digit3" android:layout_column="2" android:onClick="doClickDigit"/>
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="+"
+                android:id="@+id/plus" android:layout_column="3" android:onClick="doClickOperation"/>
+    </TableRow>
+    <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_weight="0.25">
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="4"
+                android:id="@+id/digit4" android:layout_column="0" android:onClick="doClickDigit"/>
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="5"
+                android:id="@+id/digit5" android:layout_column="1" android:onClick="doClickDigit"/>
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="6"
+                android:id="@+id/digit6" android:layout_column="2" android:onClick="doClickDigit"/>
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="-"
+                android:id="@+id/minus" android:layout_column="3" android:onClick="doClickOperation"/>
+    </TableRow>
+    <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_weight="0.25">
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="7"
+                android:id="@+id/digit7" android:layout_column="0" android:onClick="doClickDigit"/>
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="8"
+                android:id="@+id/digit8" android:layout_column="1" android:onClick="doClickDigit"/>
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="9"
+                android:id="@+id/digit9" android:layout_column="2" android:onClick="doClickDigit"/>
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="*"
+                android:id="@+id/multiply" android:layout_column="3" android:onClick="doClickOperation"/>
+    </TableRow>
+    <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_weight="0.25">
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:id="@+id/digit0" android:layout_column="0" android:onClick="doClickDigit"/>
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="."
+                android:id="@+id/point" android:layout_column="1" android:onClick="doClickDigit"/>
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="="
+                android:id="@+id/equal" android:layout_column="2" android:onClick="doCalculate"/>
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="/"
+                android:id="@+id/divide" android:layout_column="3" android:onClick="doClickOperation"/>
+    </TableRow>
+</TableLayout>
